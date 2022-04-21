@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>핏자집</title>
+</head>
+<body>
+    <h2>피자 주문하기</h2>
+    <hr />
+<form action="pizza.php">
+    고객 명 : <input type="text" name="cl" > 
+    <p></p>
+
+    전화번호 : <input type="text" name="pnumber" > 
+    <p></p>
+
+    E-mail : <input type="email" placeholder="abc@abc."> 
+    <p></p>
+
+    피자종류 : <select name="pizza">
+        <option value="">피자를 골라주세요</option>
+        <option value="불고기">불고기피자</option>
+        <option value="고구마">고구마피자</option>
+        <option value="페페로니">페페로니피자</option>
+        <option value="새우">쉬림프피자</option>
+        <option value="치즈">치즈피자</option>
+
+    </select>
+
+    <p></p>
+
+    <fieldset style="width:500px;">
+        <legend>피자 사이즈</legend>
+        <input type="radio" name="size"> Small
+        <p></p>
+        <input type="radio" name="size"> Medium
+        <p></p>
+        <input type="radio" name="size"> Large
+    </fieldset>
+
+    <fieldset style="width:500px;">
+        <legend>토핑 선택</legend>
+        <input type="checkbox" name="top" value="베이컨">베이컨
+        <p></p>
+        <input type="checkbox" name="top" value="치즈">치즈
+        <p></p>
+        <input type="checkbox" name="top" value="양파">양파
+        <p></p>
+        <input type="checkbox" name="top" value="버섯">버섯
+    </fieldset>
+    <p></p>
+    희망 배송시간 : <input type="time" >
+    <p></p>
+    배송시 요총사항 : <textarea name="요구"  cols="30" rows="3"></textarea>
+    <p></p>
+    <input type="submit" value="주문하기"> <input type="reset" value="다시 선택하기">
+
+</form>
+
+</body>
+</html>
