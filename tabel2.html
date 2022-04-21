@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<header>
+
+    <body>
+    <h1>회원가입</h1>
+    <hr>
+
+</header>
+
+<section>
+    <article>
+<form action="iogin.php">
+    <table border="1"> 
+        <tr>
+            <td colspan="2" style="text-align: center;"><strong> 회원가입</strong></td>
+        </tr>
+
+        <tr>
+            <td>이름</td> <td><input type="text" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>사용자ID</td> <td> <input type="text" name="ID"></td>
+        </tr>
+
+        <tr>
+            <td>암호</td> <td><input type="password" name="pw"></td>
+        </tr>
+
+        <tr>
+            <td>암호확인</td> <td><input type="passwored" name="pwck" ></td>
+        </tr>
+
+        <tr>
+            <td>주민등록번호</td> <td><input type="text" size="6" name="bthday">- <input type="text" size="7" name="bbthday"></td>
+        </tr>
+
+        <tr>
+            <td>전화번호</td> <td><input type="text" size="3">- <input type="text" size="4">- <input type="text" size="4"></td>
+        </tr>
+
+        <tr>
+            <td>성별</td> <td><input type="radio" value="man" name="sex">남자 <input type="radio" value="girl" name="sex">여자</td>
+        </tr>
+
+        <tr>
+            <td>직업</td> 
+            <td>
+                <select name="job" id="job-select">
+                    <option value="">선택해주세요</option>
+                    <option value="일러스트레이터">일려스트레이터</option>
+                    <option value="웹 프로그래머">웹 프로그래머</option>
+                    <option value="게임 엔진 개발자">게임 엔진 개발자</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>email 주소</td> <td><input type="text" name="mail"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="가입신청"> <input type="reset" value="취소"></td>
+        </tr>
+    
+    </table>
+</form>
+    </article>
+</section>
+
+<footer>
+
+</footer>
+</body>
+</html>
