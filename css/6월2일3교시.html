@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-테이블</title>
+    <style>
+        td,th {
+            border: none;
+            padding: 10px;
+            height: 20px;
+            width: 100px;
+            text-align: left;
+        }
+
+        th,tfoot,td {
+            border-bottom: 1px solid gray ;
+        }
+
+        table {
+            border-collapse:collapse ;
+        }
+
+        thead,tfoot {
+            background-color: gray;
+            color: yellow;
+        }
+
+        tbody tr:nth-child(even) {
+            background: antiquewhite;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background: lightcoral;
+        }
+
+        tbody tr:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h3>1학기 성적</h3>
+    <hr>
+    <table>
+        <thead>
+            <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+        </thead>
+
+        <tbody>
+            <tr><td>황기테</td><td>80</td><td>80</td></tr>
+            <tr><td>이재문</td><td>95</td><td>99</td></tr>
+            <tr><td>이병은</td><td>85</td><td>90</td></tr>
+            <tr><td>김남윤</td><td>50</td><td>40</td></tr>
+        </tbody>
+
+        <tfoot>
+            <tr><th>합</th><th>175</th><th>169</th></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
