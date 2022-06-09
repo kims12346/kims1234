@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-input태그</title>
+    <style>
+        input[type=text] {
+            color: blue;
+            border: 7px groove skyblue;
+            border-radius: 5px;
+        }
+
+        input[type=text]:hover {
+            background: aliceblue;
+        }
+
+        #b[type=text]:focus {
+            font-size: 120%;
+        }
+
+        @keyframes rain {
+            0% {color: red;}
+            2% {color: rgb(236, 16, 16);}
+            4% {color: rgb(209, 27, 27);}
+            6% {color: rgb(202, 31, 31);}
+            8% {color: rgb(192, 34, 34);}
+            10% {color: rgb(179, 37, 37);}
+            12% {color: rgb(180, 40, 40);}
+            14% {color: rgb(165, 34, 34);}
+            16% {color: rgb(165, 34, 34);}
+            18% {color: rgb(146, 36, 36);}
+            20% {color: rgb(143, 40, 40);}
+            22% {color: rgb(146, 35, 35);}
+            24% {color: rgb(131, 39, 39);}
+            26% {color: rgb(161, 37, 37);}
+            28% {color: rgb(185, 41, 41);}
+            30% {color: rgb(211, 33, 33);}
+            32% {color: rgb(219, 24, 24);}
+            34% {color: rgb(235, 23, 23);}
+            36% {color: rgb(231, 15, 15);}
+            38% {color: rgb(218, 18, 18);}
+            40% {color: rgb(255, 0, 0);}
+            50% {color: rgb(255, 100, 100);}
+            60% {color: rgb(255, 117, 117);}
+            70% {color: rgb(255, 146, 146);}
+            80% {color: rgb(255, 148, 148);}
+            90% {color: rgb(255, 174, 174);}
+            100% {color: rgb(255, 209, 209);}
+        }
+        
+        @keyframes fontsize {
+            0% {font-size: 100%;}
+            100% {font-size: 350%;}
+        }
+
+        span {
+            animation-name: rain;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        /* h3>span {
+            animation-name: fontsize;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }*/
+
+        h3>span {
+            transition: font-size 1s;
+        }
+        
+        h3>span:hover {
+            font-size: 500%;
+        }
+    </style>
+</head>
+<body>
+    <h3><span> 폼 </span>꾸미기</h3>
+    <hr> 
+    <p><label for="name">이름: </label> <input type="text" placeholder="홍길동" id="name"></p>
+    <p><label for="">성격: <input type="text" placeholder="성격" id="b"></label></p>
+    <p><span>글자의 색상 변환 애니매이션</span></p>
+</body>
+</html>
